@@ -189,6 +189,20 @@ export default function Home() {
   const [isLowering, setIsLowering] = useState(false);
   const [hasPrize, setHasPrize] = useState(false);
 
+  useEffect(() => {
+    Swal.fire({
+      title: '歡迎遊玩熊熊夾娃娃機！',
+      html: `
+        <p>快來看看你能抓到哪種熊熊吧 🐻</p>
+        <p>使用 <strong>WASD</strong> 或 <strong>方向鍵</strong> 移動</p>
+        <p>按下 <strong>空白鍵</strong> 抓取娃娃！</p>
+      `,
+      icon: 'info',
+      confirmButtonText: '開始遊戲'
+    });
+  }, []);
+  
+
 
   return (
     <div className="w-full h-screen">
