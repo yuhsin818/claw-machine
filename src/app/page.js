@@ -116,14 +116,14 @@ function Camera({setClawPos, boxRef, clawPos, isLowering, setIsLowering, hasPriz
           let prizeType = null;
           let prizeImage = null;
 
-          if (random < 0.2) {
-            prizeType = '快樂小熊';
+          if (random < 0.22) {
+            prizeType = '快樂熊熊';
             prizeImage = prizeA;
-          } else if (random < 0.5) {
-            prizeType = '眨眼小熊';
+          } else if (random < 0.44) {
+            prizeType = '眨眼熊熊';
             prizeImage = prizeB;
-          } else if (random < 0.8) {
-            prizeType = '哭哭小熊';
+          } else if (random < 0.66) {
+            prizeType = '哭哭熊熊';
             prizeImage = prizeC;
           }
 
@@ -138,9 +138,9 @@ function Camera({setClawPos, boxRef, clawPos, isLowering, setIsLowering, hasPriz
         
              if (isWin) {
               let prizeImage;
-              if (prizeType === '快樂小熊') prizeImage = prizeA;
-              if (prizeType === '眨眼小熊') prizeImage = prizeB;
-              if (prizeType === '哭哭小熊') prizeImage = prizeC;
+              if (prizeType === '快樂熊熊') prizeImage = prizeA;
+              if (prizeType === '眨眼熊熊') prizeImage = prizeB;
+              if (prizeType === '哭哭熊熊') prizeImage = prizeC;
 
               Swal.fire({
                 title: '中獎了！',
